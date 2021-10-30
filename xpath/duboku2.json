@@ -52,7 +52,7 @@
     "dtUrlName": "/text()",
     "dtUrlNameR": "",
     "playUrl": "https://duboku.tv/vodplay/{playUrl}.html",
-    "playUa": "",
+    "playUa": "referer: https://my.duboku.vip/static/player/videojs.html",
     "searchUrl": "https://duboku.tv/index.php/ajax/suggest?mid=1&wd={wd}&limit=10",
     "scVodNode": "json:list",
     "scVodName": "name",
