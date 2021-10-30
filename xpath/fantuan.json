@@ -5,7 +5,7 @@
   "cateName": "/text()",
   "cateId": "/@href",
   "cateIdR": "/vodtype/(\\d+).html",
-  "cateManual": {"电影":"1","连续剧":"2","综艺":"3","动漫":"4"},
+  "cateManual": {"电影":"1","连续剧":"2","综艺":"3","动漫":"4","纪录片":"91""动作片:"6","喜剧片:"7","爱情片:"8","科幻片:"9","恐怖片:"10","剧情片:"11","战争片:"12","微电影:"21","灾难片:"22","国产剧:"13","港剧:"14","韩剧:"15","美剧:"16","日剧:"24","泰剧:"25","台剧:"26","英剧:"27","大陆综艺:"29","台湾综艺:"30","韩国综艺:"31"},
   "homeVodNode": "//div[contains(@class, 'myui-panel-bg')]//ul[contains(@class,'myui-vodlist')]/li//a[contains(@class,'myui-vodlist__thumb') and contains(@href,'voddetail')]",
   "homeVodName": "/@title",
   "homeVodId": "/@href",
