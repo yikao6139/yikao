@@ -1,12 +1,11 @@
 {
   "ua": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4098.3 Safari/537.36",
   "homeUrl": "https://fantuan.tv",
-  "cateNode": "//ul[contains(@class,'myui-header__menu')]/li/a[contains(@href, 'vodtype')]",
   "cateNode": "//ul[contains(@class,'myui-header__menu')]/li[@class='dropdown-hover']//ul/li/a[contains(@href, 'vodtype')]",
   "cateName": "/text()",
   "cateId": "/@href",
   "cateIdR": "/vodtype/(\\d+).html",
-  "cateManual": {},
+	"cateManual": {"电影":"1","连续剧":"2","综艺":"3","动漫":"4"},
   "homeVodNode": "//div[contains(@class, 'myui-panel-bg')]//ul[contains(@class,'myui-vodlist')]/li//a[contains(@class,'myui-vodlist__thumb') and contains(@href,'voddetail')]",
   "homeVodName": "/@title",
   "homeVodId": "/@href",
