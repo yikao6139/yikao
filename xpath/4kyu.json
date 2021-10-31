@@ -15,10 +15,6 @@
         "动作片":"6",
         "科幻片":"9",
         "恐怖片":"10",
-        "蓝光影视":"25",
-        "蓝光港台":"79",
-        "蓝光日韩":"80",
-        "蓝光动漫":"26"
     },
     "homeVodNode": "//div[contains(@class, 'padding-0')]//ul[contains(@class,'myui-vodlist')]/li//a[contains(@class,'myui-vodlist__thumb')]",
     "homeVodName": "/@title",
