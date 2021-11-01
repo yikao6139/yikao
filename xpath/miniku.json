@@ -44,9 +44,10 @@
     "dtUrlName": "/span/text()",
     "playUrl": "https://www.miniku.cc/vodplay/{playUrl}/",
     "searchUrl": "https://www.miniku.cc/vodsearch/{wd}----------/",
-    "scVodNode": "//div[@class='module-list']",
-    "scVodName": "//a/@alt",
-    "scVodId": "//a/@href",
-    "scVodImg": "//img/@data-src",
+    "scVodNode": "json:list",
+    "scVodName": "name",
+    "scVodId": "id",
+    "scVodIdR": "",
+    "scVodImg": "pic",
     "scVodMark": ""
 }
