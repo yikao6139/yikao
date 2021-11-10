@@ -46,7 +46,7 @@
     "dtActorR": "",
     "dtDirector": "//p[@class='dir']/span[contains(text(), '导演')]/parent::text()",
     "dtDirectorR": "",
-    "dtDesc": "//span[contains(text(), '简介')]/parent::text()",
+    "dtDesc": "//div[@class='tbox_js']/text()",
     "dtDescR": "",
     "dtFromNode": "//div[contains(@class, 'tbox_t')]/h3/i[contains(@class, 'icon-pin')]/parent::*",
     "dtFromName": "concat('播放源',count(parent::*/preceding::*/div[contains(@class, 'tbox_t')]/h3/i[contains(@class, 'icon-pin')]) + 1)",
