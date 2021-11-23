@@ -1,3 +1,8 @@
+// 如果播放源是789pan，解析要改选789pan
+// 解析新增
+// {"name":"789pan","url":"https://web.jiexi.work/777/?url="},
+// flags 新增 789pan
+// "flags":["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu","bilibili","789pan"],
 {
     "author": "Shixue",
     "ua": "",
