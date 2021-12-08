@@ -14,7 +14,7 @@
     "homeVodImg": "/a/@data-original",
     "homeVodImgR": "\\S+(http\\S+)",
     "homeVodMark": "//span[contains(@class,'mo-situ-rema')]/text()",
-    "cateUrl": "https://aixixi.vip/index.php/vod/show/area/{area}/by/{by}/year/{year}/id/{cateId}/page/{catePg}.html",
+    "cateUrl": "https://aixixi.vip/index.php/vod/show/area/{area}/class/{class}/by/{by}/year/{year}/id/{cateId}/page/{catePg}.html",
     "cateVodNode": "//ul[@class='mo-cols-rows']/li",
     "cateVodName": "/a[2]/text()",
     "cateVodId": "/a/@href",
@@ -322,6 +322,48 @@
                     {
                         "n": "欧美",
                         "v": "欧美"
+                    },
+                    {
+                        "n": "其他",
+                        "v": "其他"
+                    }
+                ]
+            },
+            {
+                "key": "class",
+                "name": "类型",
+                "value": [
+                    {
+                        "n": "全部",
+                        "v": ""
+                    },
+                    {
+                        "n": "情感",
+                        "v": "情感"
+                    },
+                    {
+                        "n": "科幻",
+                        "v": "科幻"
+                    },
+                    {
+                        "n": "搞笑",
+                        "v": "搞笑"
+                    },
+                    {
+                        "n": "热血",
+                        "v": "热血"
+                    },
+                    {
+                        "n": "益智",
+                        "v": "益智"
+                    },
+                    {
+                        "n": "励志",
+                        "v": "励志"
+                    },
+                    {
+                        "n": "亲子",
+                        "v": "亲子"
                     },
                     {
                         "n": "其他",
