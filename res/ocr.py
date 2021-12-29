@@ -7,50 +7,7 @@ from subprocess import Popen,PIPE
 
 HOME = os.path.expanduser("~")
 CWD = os.getcwd()
-
-# All found ngrok authtoken from github
-tokens = {
-    "lostcatbox": "1X7aYWPuFKYzvewLbnNoMo71kZi_2uzbB966Q4TU5cpgNPKhy",
-    "zero-structure": "1UqHsShi6o3ketf426P5UtVdTfs_5XFD6sFRMkryka8fAbLd3",
-    "ekkleesia": "7LE18LK8zeaDYeybp5fKP_6GNG1oHEfhTnQE7s9qpw",
-    "SEARteam1928": "1Qe1IeySOQWSTnpQ3eFfr8j7Oi5_2zhanqnpZwHBhsfANd6yf",
-    "angenalZZZ": "7pWLVhS1gxiMAQdaFeYJy_31krnw9drNLLJftaNSFnm",
-    "lukikrk": "1XJNNnG8kZsPjjFmLsYNWCC0gIo_7VpBhwTcvhiuK4o2G2jbt",
-    "bhavya7777": "1XzP70k7YVrg7MMaHQWPks0Q8Za_7y6b1mTDJDmJWcuqt5qTp",
-    "hector605": "1Y14GB7E4acXxWYnVTiBejgnLuV_853z7mAgaTJxE9KY3HnCW",
-    "fouille": "1XkoKNLcyiPECcQfGUjrTVzN64P_7tv2YgC4DSnazyVtpCpHm",
-    "rikitz": "1Xc7z0uHxDoI9Ah06EQKgH61zoP_6WTPXDGvjFmcp2o7gNmqa",
-    "VictorM369": "3c4WZaxPbjeRwRibY5opU_2N4TTRKaDubtEWMeKkFXn",
-    "YHF7": "3fW4eXHdUN3ziCBXcahZ_3tnDdaTyLw8tKzJtKZkLp",
-    "cyberkallan": "3CqeFZQht43cG5Z2YKfyv_6aKTrgrbo1HtyRi78hRKK",
-    "Toxic-Omega": "1RCQwctVjSz8AIzHO6S55jm8XB8_5N6PqyZVnoN7mUVqF1yvT",
-    "DevLuDaley": "1XTxsRKP8XyxvaJigX9XFXU2FvK_4dqzLxNRJHBz8A3aoPC85",
-    "randyramig": "3Y8YSw6bvC9CsbYeRczmt_8akMuLYA3bAUshP1NCMnW",
-    "sz-xcf": "1XSYq8gmxzNgMlYQzERmC50uBot_6qURZnj43KsYF2GWaUamm",
-    "api1": "6qGnEsrCL4GqZ7hMfqpyz_7ejAThUCjVnU9gD5pbP5u",
-    "api2": "1Q4i7F6isO7zZRrrjBKZzZhwsMu_74yJqoEs1HrJh1zYyxNo1",
-    "api3": "1SCsbuawjv9d79jlhlfNljaFTaB_5heVkcR6C7Sk8UBaQ1U1C",
-    "api5": "1Q45NXgsx6oyusN3GiNAYvkNJPS_AveYUDBcPHsvRvf21WZv",
-    "api6": "1Q6smHt4Bzz9VEXTwj3a7p5Gdx2_5mp6ivT6N6nB3YmRHUEM3",
-    "api7": "7VJwGkCTTUubiGhgz6Gv6_5fMLganRSKj9ntdefnF5o",
-    "api9": "5S28rBKgc22ZW7evyedNT_YvEm15RZSHdXgS4QwYbk",
-    "api12": "3VnrrXDQVHoNp9HvHFhqX_3X4JExwm6L9n6w4ppL1qy",
-    "api13": "1ShshNwfhQcyOqlMjnBDVE5X5jC_3WAmzomMHAgkunka4dSck",
-    "api14": "772yFAui6ynH9AYx29HHS_5Xcr88pHtPTQLwewv7Ctk",
-    "api16": "5HmAWwzDdkYp8CdzDQMDS_4BGwsK7AdMssLnSttZEeh",
-    "api17": "1T750atJi3xccndeUqJ4ewiS62o_2s6f8GUccL1qDUXTGSftN",
-    "api18": "1QUysRUo97w5mdB6sCZvTTMM0aK_3unoMs6nYd7grgCkuhbj3",
-    "api19": "3CqeFZQht43cG5Z2YKfyv_6aKTrgrbo1HtyRi78hRKK",
-    "api20": "5eMywZLisJNdybqpFLVgs_4XQDeF3YCMHu1Ybf7mVE6",
-    "api21": "4Cg1cEwCT7Ek89zT4VcdB_4GPAjMFgu6nhwY7SxQm94",
-    "api22": "1SGs4s9NrhxP9FRURszjL1nITSv_otcpfpb6aMVEL13u3dv1",
-    "api23": "1StL3sIccfR624Uc3BGV36XA0qG_6cAMMYFdKtPjtWax3AHSK",
-    "api24": "1SuK2ukM9Z4NohoJbU9224uMzXr_6h1ABdCrJU2EviZv4RN4r",
-    "api26": "7ecmt2Kux5uYsTUHrrqGU_3W9CJnaSeSyxiwkjxNhHc",
-    "api27": "3CqeFZQht43cG5Z2YKfyv_6aKTrgrbo1HtyRi78hRKK",
-    "api28": "2DXURjrUhAZZNMhqN5m1F_6HHzejcfRecP8upwJnNBd"
-}
-
+tokens = {}
 
 class ngrok:
 
@@ -170,7 +127,7 @@ class ngrok:
         time.sleep(2)
         return True
 
-    data = {"url": f"http://{host}"}
+    data = {"url": f"https://{host}"}
     if displayB:
       displayUrl(data, btc)
     return data
@@ -193,7 +150,7 @@ class ngrok:
       for h in host:
         if h['name'] == nServer:
           host = h['public_url'][8:]
-          data = {"url": f"http://{host}"}
+          data = {"url": f"https://{host}"}
           if displayB:
             displayUrl(data, btc)
           return data
@@ -280,7 +237,7 @@ def displayUrl(data, btc='b', pNamU='Public URL: ', EcUrl=None, ExUrl=None, cls=
           btcolor = 'hsla(10, 86%, 56%, 1)'
           btshado = 'hsla(10, 40%, 52%, .4)'
 
-    return display(HTML('''<style>@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');  :root {   --text-color: '''+bttxt+''';   --shadow-color: '''+btshado+''';   --btn-color: '''+btcolor+''';   --bg-color: #141218; }  * {   box-sizing: border-box; } button { position:relative; padding: 10px 20px;     border: none;   background: none;   cursor: pointer;      font-family: "Source Code Pro";   font-weight: 900;   font-size: 100%;     color: var(--text-color);      background-color: var(--btn-color);   box-shadow: var(--shadow-color) 2px 2px 22px;   border-radius: 4px;    z-index: 0;     overflow: hidden;    }  button:focus {   outline-color: transparent;   box-shadow: var(--btn-color) 2px 2px 22px; }  .right::after, button::after {   content: var(--content);   display: block;   position: absolute;   white-space: nowrap;   padding: 40px 40px;   pointer-events:none; }  button::after{   font-weight: 200;   top: -30px;   left: -20px; }   .right, .left {   position: absolute;   width: 100%;   height: 100%;   top: 0; } .right {   left: 66%; } .left {   right: 66%; } .right::after {   top: -30px;   left: calc(-66% - 20px);      background-color: var(--bg-color);   color:transparent;   transition: transform .4s ease-out;   transform: translate(0, -90%) rotate(0deg) }  button:hover .right::after {   transform: translate(0, -47%) rotate(0deg) }  button .right:hover::after {   transform: translate(0, -50%) rotate(-7deg) }  button .left:hover ~ .right::after {   transform: translate(0, -50%) rotate(7deg) }  /* bubbles */ button::before {   content: '';   pointer-events: none;   opacity: .6;   background:     radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),     radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),     radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);    width: 100%;   height: 300%;   top: 0;   left: 0;   position: absolute;   animation: bubbles 5s linear infinite both; }  @keyframes bubbles {   from {     transform: translate();   }   to {     transform: translate(0, -66.666%);   } }    Resources</style><center><a href="'''+showUrL+'''" target="_blank"><div style="width: 570px;   height: 80px; padding-top:15px"><button style='--content: "'''+showTxT+'''";'">   <div class="left"></div>'''+showTxT+'''<div class="right"></div> </div></button></a></center>'''))
+    return display(HTML('''<style>@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');  :root {   --text-color: '''+bttxt+''';   --shadow-color: '''+btshado+''';   --btn-color: '''+btcolor+''';   --bg-color: #141218; }  * {   box-sizing: border-box; } button { position:relative; padding: 10px 20px;     border: none;   background: none;   cursor: pointer;      font-family: "Source Code Pro";   font-weight: 900;   font-size: 100%;     color: var(--text-color);      background-color: var(--btn-color);   box-shadow: var(--shadow-color) 2px 2px 22px;   border-radius: 4px;    z-index: 0;     overflow: hidden;    }  button:focus {   outline-color: transparent;   box-shadow: var(--btn-color) 2px 2px 22px; }  .right::after, button::after {   content: var(--content);   display: block;   position: absolute;   white-space: nowrap;   padding: 40px 40px;   pointer-events:none; }  button::after{   font-weight: 200;   top: -30px;   left: -20px; }   .right, .left {   position: absolute;   width: 100%;   height: 100%;   top: 0; } .right {   left: 66%; } .left {   right: 66%; } .right::after {   top: -30px;   left: calc(-66% - 20px);      background-color: var(--bg-color);   color:transparent;   transition: transform .4s ease-out;   transform: translate(0, -90%) rotate(0deg) }  button:hover .right::after {   transform: translate(0, -47%) rotate(0deg) }  button .right:hover::after {   transform: translate(0, -50%) rotate(-7deg) }  button .left:hover ~ .right::after {   transform: translate(0, -50%) rotate(7deg) }  /* bubbles */ button::before {   content: '';   pointer-events: none;   opacity: .6;   background:     radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),     radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),     radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);    width: 100%;   height: 300%;   top: 0;   left: 0;   position: absolute;   animation: bubbles 5s linear infinite both; }  @keyframes bubbles {   from {     transform: translate();   }   to {     transform: translate(0, -66.666%);   } }    Resources</style><center><a href="'''+showUrL+'''" target="_blank"><div style="width: 700px;   height: 80px; padding-top:15px"><button style='--content: "'''+showTxT+'''";'">   <div class="left"></div>'''+showTxT+'''<div class="right"></div> </div></button></a></center>'''))
 
 
 def findProcess(process, command="", isPid=False):
@@ -303,6 +260,22 @@ def findProcess(process, command="", isPid=False):
                     pass
             except:
                 continue
+
+def installArgoTunnel():
+    if checkAvailable(f"{HOME}/tools/argotunnel/cloudflared"):
+        return
+    else:
+        import os
+        from shutil import unpack_archive
+        from urllib.request import urlretrieve
+        
+        os.makedirs(f'{HOME}/tools/argotunnel/', exist_ok=True)
+        aTURL = findPackageR("cloudflare/cloudflared", "cloudflared-linux-amd64")
+        urlretrieve(aTURL, f'{HOME}/tools/argotunnel/cloudflared')
+        # unpack_archive('cloudflared.tgz',
+        #   f'{HOME}/tools/argotunnel')
+        os.chmod(f'{HOME}/tools/argotunnel/cloudflared', 0o755)
+        # os.unlink('cloudflared.tgz')
 
 def installNgrok():
     if checkAvailable("/usr/local/bin/ngrok"):
@@ -417,7 +390,7 @@ class LocalhostRun:
         stdout=PIPE, stdin=PIPE, stderr=PIPE)
       #print("ssh -R 80:localhost:{self.port} {self.id}@ssh.localhost.run -o StrictHostKeyChecking=no -o ServerAliveInterval={self.interval} -o ServerAliveCountMax={self.retries}")
       try:
-        newAddr = re.findall("http://(.*?.localhost.run)", self.connection.stdout.readline().decode("utf-8"))[0]
+        newAddr = re.findall("(.*?.localhost.run)", self.connection.stdout.readline().decode("utf-8"))[0]
         localhostOpenDB[str(self.port)] = newAddr 
         accessSettingFile("localhostDB.json" , localhostOpenDB, v=False)
         return newAddr
@@ -435,6 +408,128 @@ class LocalhostRun:
   def kill(self):
     self.connection.kill()
 
+class ArgoTunnel:
+  def __init__(self, port, proto='http', metrics=49589, interval=30, retries=30):
+    import os
+    filePath = "/usr/local/sessionSettings/argotunnelDB.json"
+    if not os.path.exists(filePath):
+      os.makedirs(filePath[:-17], exist_ok=True)
+      open(filePath, 'w').close()
+    
+    #Installing argotunnel
+    installArgoTunnel()
+
+    self.connection=None
+    self.proto=proto
+    self.port=port
+    self.metricPort=metrics
+    self.interval=interval
+    self.retries=retries
+
+  # def start(self):
+  #   if self.connection:self.connection.kill()
+  #   # self.connection=Popen(f"ssh -R 80:localhost:{self.port} {self.id}@ssh.localhost.run -o StrictHostKeyChecking=no".split(), stdout=PIPE, stdin=PIPE)
+  #   self.connection=Popen(f"/content/tools/argotunnel/cloudflared tunnel --url {self.proto}://0.0.0.0:{self.port} --logfile cloudflared.log".split(), stdout=PIPE, stdin=PIPE)
+  #   try:
+  #     return re.findall("https://(.*?.trycloudflare.com)",self.connection.stdout.readline().decode("utf-8"))[0]
+  #   except:
+  #     raise Exception(self.connection.stdout.readline().decode("utf-8"))
+
+  def keep_alive(self):
+    # if self.connection:self.connection.kill()
+    import urllib, requests, re
+    from urllib.error import HTTPError
+    
+    try:
+      argotunnelOpenDB = dict(accessSettingFile("argotunnelDB.json", v=False))
+    except TypeError:
+      argotunnelOpenDB = dict()
+
+    if findProcess("cloudflared", f"localhost:{self.metricPort}"):
+      try:
+        oldAddr = argotunnelOpenDB[str(self.port)]
+        if requests.get("http://"+oldAddr).status_code == 200:
+          return oldAddr
+      except:
+        pass
+
+    self.connection=Popen(f"{HOME}/tools/argotunnel/cloudflared tunnel --url {self.proto}://0.0.0.0:{self.port} --logfile {HOME}/tools/argotunnel/cloudflared_{self.port}.log --metrics localhost:{self.metricPort}".split(),
+      stdout=PIPE, stdin=PIPE, stderr=PIPE, universal_newlines=True)
+    
+    time.sleep(5)
+
+    hostname = None
+    for i in range(20):
+      try:
+        with urllib.request.urlopen(f"http://127.0.0.1:{self.metricPort}/metrics") as response:
+            hostname = re.search(r'userHostname=\"https://(.+)\"',
+             response.read().decode('utf-8'), re.MULTILINE)
+            if not hostname:
+              time.sleep(1)
+              continue
+            hostname = hostname.group(1)
+            break
+      except HTTPError:
+        time.sleep(2)
+        
+    if not hostname:
+      raise RuntimeError("Failed to get user hostname from cloudflared")
+    
+    argotunnelOpenDB[str(self.port)] = hostname
+    accessSettingFile("argotunnelDB.json" , argotunnelOpenDB, v=False)
+    return hostname
+
+  def kill(self):
+    self.connection.kill()
+
+class jprq:
+  def __init__(self, port, proto='http', ids=None):
+    import os, uuid
+    filePath = "/usr/local/sessionSettings/jprqDB.json"
+    if not os.path.exists(filePath):
+      os.makedirs(filePath[:-11], exist_ok=True)
+      open(filePath, 'w').close()
+
+    if not ids:self.ids=str(uuid.uuid4())[:12]
+    #Installing jprq
+    runSh("pip install jprq")
+
+    self.connection=None
+    self.proto=proto
+    self.port=port
+
+  def keep_alive(self):
+    # if self.connection:self.connection.kill()
+    import urllib, requests, re
+    try:
+      jprqOpenDB = dict(accessSettingFile("jprqDB.json", v=False))
+    except TypeError:
+      jprqOpenDB = dict()
+
+    if findProcess("jprq", f"{self.port}"):
+      try:
+        oldAddr = jprqOpenDB[str(self.port)]
+        if requests.get("http://"+oldAddr).status_code == 200:
+          return oldAddr
+      except:
+        pass
+    hostname = f"OneClickRun-{self.ids}"
+    self.connection=Popen(f"jprq -s {hostname} {self.port}".split(),
+      stdout=PIPE, stdin=PIPE, stderr=PIPE)
+    
+    time.sleep(3)
+
+    # try:
+    #   return re.findall("https://(.*?.jprq.live/)", self.connection.stdout.readline().decode("utf-8"))[0]
+    # except:
+    #   raise Exception(self.connection.stdout.readline().decode("utf-8"))
+    hostname += ".jprq.live"
+    jprqOpenDB[str(self.port)] = hostname
+    accessSettingFile("jprqDB.json" , jprqOpenDB, v=False)
+    return hostname
+
+  def kill(self):
+    self.connection.kill()
 
 class PortForward:
   def __init__(self,connections,region=None,SERVICE="localhost",TOKEN=None,USE_FREE_TOKEN=None,config=None):
@@ -442,8 +537,11 @@ class PortForward:
     for con in connections:
       c[con[0]]=dict(port=con[1],proto=con[2])
     self.connections=c
-    self.ngrok=ngrok(TOKEN,USE_FREE_TOKEN,connections,region,config)
+    if config:config[1] = closePort(config[1])
+    self.config = config
+    if SERVICE=="ngrok":self.ngrok=ngrok(TOKEN,USE_FREE_TOKEN,connections,region,self.config)
     self.SERVICE = SERVICE
+    
 
   def start(self,name,btc='b',displayB=True,v=True):
     from IPython.display import clear_output
@@ -459,14 +557,64 @@ class PortForward:
               clear_output()
               loadingAn(name="lds")
               textAn("Starting localhost ...", ty="twg")
-          data = dict(url="http://"+LocalhostRun(port).keep_alive())
+          data = dict(url="https://"+LocalhostRun(port).keep_alive())
           if displayB:
               displayUrl(data, btc)
           return data
     elif self.SERVICE == "ngrok":
         return self.ngrok.start(name,btc,displayB,v)
+    elif self.SERVICE == "argotunnel":
+        con=self.connections[name]
+        port=con["port"]
+        proto=con["proto"]
+        if v:
+          clear_output()
+          loadingAn(name="lds")
+          textAn("Starting Argo Tunnel ...", ty="twg")
+        data = dict(url="https://"+ArgoTunnel(port, proto, closePort(self.config[1])).keep_alive())
+        if displayB:
+          displayUrl(data, btc)
+        return data
+    elif self.SERVICE == "jprq":
+        con=self.connections[name]
+        port=con["port"]
+        proto=con["proto"]
+        if v:
+          clear_output()
+          loadingAn(name="lds")
+          textAn("Starting jprq ...", ty="twg")
+        data = dict(url="https://"+jprq(port, proto).keep_alive())
+        if displayB:
+          displayUrl(data, btc)
+        return data
+        
 
 
 class PortForward_wrapper(PortForward):
   def __init__(self,SERVICE,TOKEN,USE_FREE_TOKEN,connections,region,config):
     super(self.__class__,self).__init__(connections,region,SERVICE,TOKEN,USE_FREE_TOKEN,config)
+
+
+def findPackageR(id_repo, p_name, tag_name=False, all_=False):
+  import requests
+
+  for rawData in requests.get(f"https://api.github.com/repos/{id_repo}/releases").json():
+    if tag_name:
+      if rawData['tag_name'] != tag_name:
+        continue
+
+    for f in rawData['assets']:
+      if p_name == f['browser_download_url'][-len(p_name):]:
+        rawData['assets'] = f 
+        return f['browser_download_url'] if not all_ else rawData
+  raise Exception("not found or maybe api changed!\n Try again with Change packages name")
+
+def closePort(port):
+  import socket
+  with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    for _ in range(100):
+      if s.connect_ex(('localhost', port)) == 0:
+        port += 1
+      else:
+        return port
+  raise Exception("Close port not found!")
